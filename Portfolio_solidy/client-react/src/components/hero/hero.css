@@ -1,0 +1,83 @@
+#hero {
+  /* margin: 4rem 0px 0px 0px; */
+  padding: 0;
+  background-image: url("C:\Users\boppe\OneDrive\Desktop\portfolio\client-react\src\images\back.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+/* #hero::before {
+  content: "";
+  inset: 0;
+  background-color: white;
+  position: absolute;
+  opacity: 0.4;
+
+} */
+.hero_content {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-top: 12rem;
+  margin-left: -30rem;
+}
+#hero_content-text {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+#hero_content-text h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #45505b;
+}
+#hero_content-text p {
+  color: #45505b;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+  margin-bottom: -8px;
+}
+.hero_content-icons a {
+  font-size: 24px;
+  display: inline-block;
+  color: #45505b;
+  line-height: 1;
+  margin-right: 20px;
+  margin-top: 10px;
+
+  transition: 0.3s;
+}
+#hero .hero_content-icons a .icon:hover {
+  color: #0563bb;
+}
+
+@media only screen and (max-width: 1245px) {
+  #hero_content-text h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .hero_content {
+    align-items: center;
+    justify-content: center;
+    transition: 0.6;
+    margin-left: 10vw;
+  }
+  #hero_content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #hero_content-text h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  #hero_content-text p {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 1px;
+    margin-bottom: 0;
+  }
+}
